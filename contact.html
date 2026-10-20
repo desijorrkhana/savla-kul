@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Savla Kul</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind+Vadodara:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="in"><a class="brand" href="index.html">Savla Kul<small>Shri Savla Bhavik Mandal · Bhinsara</small></a><ul><li><a href="index.html">Utpatti</a></li><li><a href="alternate.html">Alternate accounts</a></li><li><a href="sources.html">Research & sources</a></li><li><a href="mandal.html">The Mandal</a></li><li><a href="vidhi.html">Vidhi</a></li><li><a href="sthan.html">Mataji's Sthan</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a href="community.html">Community</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul><span class="lang" title="Gujarati version planned">EN · ગુજરાતી soon</span></div></nav>
+<div class="wrap">
+
+<header class="ph">
+  <div class="eyebrow">Page 7 · Contact</div>
+  <div class="gu">સંપર્ક</div>
+  <h1>Contact</h1>
+  <p class="lede">How to reach the Mandal — to record a family event, trace your lineage, plan a visit to Bhinsara, or take part in the Pehdi and Juvar.</p>
+</header>
+
+<section>
+  <h2>Reach the Mandal</h2>
+  <div class="kv">
+    <div><b>Mumbai</b><span id="c1">[Name] · [mobile]</span><button class="copy" data-for="c1" type="button">Copy</button></div>
+    <div><b>Kutch / Bhinsara</b><span id="c2">[Name] · [mobile]</span><button class="copy" data-for="c2" type="button">Copy</button></div>
+    <div><b>Records &amp; Chopda</b><span id="c3">[Bhatt Raja / records trustee] · [mobile]</span><button class="copy" data-for="c3" type="button">Copy</button></div>
+    <div><b>Email</b><span id="c4">[mandal email]</span><button class="copy" data-for="c4" type="button">Copy</button></div>
+    <div><b>WhatsApp group</b><span>Ask any of the above to be added to the Savla Bhavik Mandal group.</span></div>
+    <div><b>Postal</b><span>[Mandal office address]</span></div>
+  </div>
+  <p class="hint">Numbers and addresses are shown as text so they can be copied on any device. Tapping a number may not place a call inside this page; copy it to your dialler.</p>
+  <div class="todo"><b>To fill in.</b> Office-bearers' names and numbers for Mumbai and Kutch, the records contact, and an email address for the Mandal.</div>
+</section>
+
+<section>
+  <h2>What to contact us for</h2>
+  <ul class="plain">
+    <li><b>Lineage</b> — to see your family's entry in the Chopda or obtain a certified extract.</li>
+    <li><b>Life events</b> — to have a janam, lagna or maran recorded by the Bhatt Raja.</li>
+    <li><b>Visiting Bhinsara</b> — directions and the caretaker's number; see <a href="sthan.html">Mataji's Sthan</a>.</li>
+    <li><b>Pehdi and Juvar</b> — dates, participation and seva.</li>
+    <li><b>Records and research</b> — to share documents or join the work; see <a href="community.html">Community</a>.</li>
+  </ul>
+</section>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){var el=document.getElementById(b.dataset.for);var t=el.textContent.trim();function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)}
+try{navigator.clipboard.writeText(t).then(done,function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)})}catch(e){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}})});
+</script>
+
+<footer>Prepared for the Savla brethren of Bhinsara, Mumbai and the diaspora. Research compiled pro bono from the family's Barot notebook, the Anchalgachha pattavali and community records. Read the <a href="disclaimer.html">disclaimer</a> · <a href="community.html">send corrections or records</a>.</footer>
+</div>
+</body>
+</html>

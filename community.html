@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Community — Savla Kul</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind+Vadodara:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="in"><a class="brand" href="index.html">Savla Kul<small>Shri Savla Bhavik Mandal · Bhinsara</small></a><ul><li><a href="index.html">Utpatti</a></li><li><a href="alternate.html">Alternate accounts</a></li><li><a href="sources.html">Research & sources</a></li><li><a href="mandal.html">The Mandal</a></li><li><a href="vidhi.html">Vidhi</a></li><li><a href="sthan.html">Mataji's Sthan</a></li><li><a href="contact.html">Contact</a></li><li><a href="community.html" aria-current="page">Community</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul><span class="lang" title="Gujarati version planned">EN · ગુજરાતી soon</span></div></nav>
+<div class="wrap">
+
+<header class="ph">
+  <div class="eyebrow">Page 8 · Community</div>
+  <div class="gu">સમાજ</div>
+  <h1>Community</h1>
+  <p class="lede">Savla households are spread across Kutch, Mumbai and the world. This page is for reaching them, and for them to reach back: with records, corrections, photographs and news.</p>
+</header>
+
+<section>
+  <h2>Write to the Mandal</h2>
+  <div class="prose"><p>If you hold an old chopda, a family tree, a photograph of the Mata or the old temple, or a different account of our origin than the one on these pages, the Mandal wants to hear from you. Fill in the form; it prepares a message you can send by WhatsApp or email to the contacts on the <a href="contact.html">Contact</a> page.</p></div>
+  <form id="f">
+    <label>Your name<input id="fname" name="name" required autocomplete="name"></label>
+    <label>Village of origin / current city<input id="fplace" name="place" placeholder="e.g. Lakadia · Mumbai"></label>
+    <label>What are you sharing?<select id="ftype" name="type"><option>A record or photograph</option><option>A correction to these pages</option><option>A different account of our origin</option><option>A family event for the Chopda</option><option>I want to help with research</option><option>Something else</option></select></label>
+    <label>Message<textarea id="fmsg" name="msg" placeholder="Tell us what you have, or what you know."></textarea></label>
+    <button class="primary" type="submit">Prepare message</button>
+  </form>
+  <div id="out" hidden>
+    <h3>Your message</h3>
+    <p class="hint">Copy this and send it to any Mandal contact by WhatsApp or email. Attach scans or photos in the same message.</p>
+    <textarea id="outtxt" readonly></textarea>
+    <button class="copy" id="copyout" type="button">Copy message</button>
+  </div>
+</section>
+
+<section>
+  <h2>Where Savlas are</h2>
+  <div class="prose"><p>From the 52 Kutch villages and 24 Vagad villages of the Barot record, Savla families today live in Mumbai, across Gujarat, and in East Africa, the UK, the Gulf and North America. The Mandal is compiling a directory of households by place so that the Pehdi and Juvar reach everyone. If your household is not yet enrolled, use the form above.</p></div>
+  <div class="todo"><b>To fill in.</b> Count of enrolled households by region, and the enrolment procedure under the trust's bye-laws.</div>
+</section>
+
+<section>
+  <h2>Outreach</h2>
+  <ul class="plain">
+    <li>These pages will be circulated first in the Mandal's WhatsApp group as a draft, for correction.</li>
+    <li>A Gujarati version is planned once the English text is settled.</li>
+    <li>Old photographs and records sent in will be scanned and returned, and credited on the <a href="mandal.html">Mandal</a> page.</li>
+  </ul>
+</section>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var v=function(id){return document.getElementById(id).value.trim()};
+var t='Jai Siriyal Maa.\n\nName: '+v('fname')+'\nPlace: '+v('fplace')+'\nSharing: '+v('ftype')+'\n\n'+v('fmsg')+'\n\n(Sent via the Savla Kul pages)';
+document.getElementById('outtxt').value=t;document.getElementById('out').hidden=false;document.getElementById('outtxt').focus()});
+document.getElementById('copyout').addEventListener('click',function(){var ta=document.getElementById('outtxt');var b=this;function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy message'},1500)}
+try{navigator.clipboard.writeText(ta.value).then(done,function(){ta.select()})}catch(e){ta.select()}});
+</script>
+
+<footer>Prepared for the Savla brethren of Bhinsara, Mumbai and the diaspora. Research compiled pro bono from the family's Barot notebook, the Anchalgachha pattavali and community records. Read the <a href="disclaimer.html">disclaimer</a> · <a href="community.html">send corrections or records</a>.</footer>
+</div>
+</body>
+</html>
